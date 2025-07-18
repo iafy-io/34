@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wasabi Trader - Comparador Inteligente de Luz y Gas | AHORRO GARANTIZADO</title>
+    <meta name="description" content="Comparador de tarifas de luz y gas con IA. Más de 12 años de experiencia, equipo de +100 asesores expertos. AHORRO GARANTIZADO en menos de 5 minutos sin largas llamadas." />
+    <meta name="keywords" content="comparador luz, comparador gas, tarifas energía, ahorro garantizado, IA, asesores expertos" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Wasabi Trader - AHORRO GARANTIZADO en Luz y Gas" />
+    <meta property="og:description" content="12+ años de experiencia, +100 asesores expertos, comparativas con IA en menos de 5 minutos" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Performance optimizations -->
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Wasabi Trader" />
+    
+    <!-- Preload critical resources -->
+    <link rel="dns-prefetch" href="//images.pexels.com" />
+    <link rel="preconnect" href="https://images.pexels.com" crossorigin />
+    
+    <!-- Critical CSS inline optimizado -->
+    <style>
+      /* Critical above-the-fold styles optimizados */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      html { 
+        background: #ffffff;
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      
+      body { 
+        background: #ffffff;
+        font-family: system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+        color: #111827;
+        overflow-x: hidden;
+      }
+      
+      #root { 
+        background: #ffffff;
+        min-height: 100vh;
+      }
+      
+      .loading { 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        min-height: 100vh; 
+        background: #ffffff;
+      }
+      
+      .spinner { 
+        width: 50px; 
+        height: 50px; 
+        border: 4px solid #e5e7eb; 
+        border-top: 4px solid #3b82f6; 
+        border-radius: 50%; 
+        animation: spin 1s linear infinite; 
+      }
+      
+      @keyframes spin { 
+        0% { transform: rotate(0deg); } 
+        100% { transform: rotate(360deg); } 
+      }
+      
+      /* Preload gradient */
+      .gradient-preload {
+        background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
