@@ -52,7 +52,7 @@ export default function Header() {
               <img 
                 src="/wasabi azul 2.png" 
                 alt="Wasabi Trader Logo" 
-                className="h-12 sm:h-14 lg:h-16 w-auto object-contain"
+                className="h-24 sm:h-28 lg:h-32 w-auto object-contain"
                 style={{ maxWidth: '180px' }}
               />
             </Link>
