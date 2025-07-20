@@ -4,15 +4,15 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/',
   server: {
     host: true,
     port: 5173
   },
   build: {
     outDir: 'dist',
-    target: 'es2015',
-    cssTarget: 'chrome80',
+    target: 'esnext',
+    minify: 'esbuild',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -22,18 +22,7 @@ export default defineConfig({
         }
       }
     },
-    cssCodeSplit: true,
-    sourcemap: false,
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-        pure_funcs: ['console.log', 'console.info', 'console.debug', 'console.warn']
-      }
-    },
-    chunkSizeWarningLimit: 1000,
-    assetsInlineLimit: 4096
+    sourcemap: false
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],
