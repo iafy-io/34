@@ -17,22 +17,22 @@ export default function Header() {
   return (
     <>
       {/* Barra azul superior */}
-      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-1">
+      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex items-center justify-between text-xs">
+          <div className="flex items-center justify-between text-sm">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
-                <Shield className="w-3 h-3" />
+                <Shield className="w-4 h-4" />
                 <span className="font-bold">AHORRO GARANTIZADO</span>
               </div>
               <div className="hidden sm:flex items-center space-x-2">
-                <Clock className="w-3 h-3" />
+                <Clock className="w-4 h-4" />
                 <span className="font-bold">Proceso en 5 minutos</span>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <a href="tel:+34621508300" className="flex items-center space-x-2 hover:text-blue-200 transition-colors">
-                <Phone className="w-3 h-3" />
+                <Phone className="w-4 h-4" />
                 <span className="font-bold">621 50 83 00</span>
               </a>
             </div>
@@ -45,13 +45,13 @@ export default function Header() {
         isScrolled ? 'bg-white/95 backdrop-blur-xl shadow-lg' : 'bg-white/90 backdrop-blur-md'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex justify-between items-center py-2">
+          <div className="flex justify-between items-center py-1">
             {/* Logo */}
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
                 src="/wasabilogo copy copy copy copy copy.jpg" 
                 alt="Wasabi Trader Logo" 
-                className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
+                className="h-10 sm:h-12 lg:h-14 w-auto object-contain"
                 style={{ maxWidth: '200px', height: 'auto' }}
               />
             </Link>
