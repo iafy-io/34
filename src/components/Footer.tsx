@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="animate-fade-in-up">
             <div className="flex items-center space-x-3 lg:space-x-4 mb-6">
               <img 
-                src="/wasabilogo copy copy copy copy copy.jpg" 
+                src="/wasabi azul 2.png" 
                 alt="Wasabi Trader Logo" 
                 className="h-12 lg:h-16 w-auto object-contain"
                 style={{ maxWidth: '180px', height: 'auto' }}

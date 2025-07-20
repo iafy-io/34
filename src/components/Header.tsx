@@ -50,7 +50,7 @@ export default function Header() {
             {/* Logo optimizado */}
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
-                src="/wasabi-azul-2.png" 
+                src="/wasabi azul 2.png" 
                 alt="Wasabi Trader Logo" 
                 className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
                 style={{ maxWidth: '180px' }}
