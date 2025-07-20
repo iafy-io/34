@@ -17,22 +17,22 @@ export default function Header() {
   return (
     <>
       {/* Barra azul superior */}
-      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-2">
+      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-1">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex items-center justify-between text-sm">
+          <div className="flex items-center justify-between text-xs">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
-                <Shield className="w-4 h-4" />
+                <Shield className="w-3 h-3" />
                 <span className="font-bold">AHORRO GARANTIZADO</span>
               </div>
               <div className="hidden sm:flex items-center space-x-2">
-                <Clock className="w-4 h-4" />
+                <Clock className="w-3 h-3" />
                 <span className="font-bold">Proceso en 5 minutos</span>
               </div>
             </div>
             <div className="flex items-center space-x-4">
               <a href="tel:+34621508300" className="flex items-center space-x-2 hover:text-blue-200 transition-colors">
-                <Phone className="w-4 h-4" />
+                <Phone className="w-3 h-3" />
                 <span className="font-bold">621 50 83 00</span>
               </a>
             </div>
@@ -45,13 +45,13 @@ export default function Header() {
         isScrolled ? 'bg-white/95 backdrop-blur-xl shadow-lg' : 'bg-white/90 backdrop-blur-md'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between items-center py-2">
             {/* Logo */}
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
                 src="/wasabilogo copy copy copy copy copy.jpg" 
                 alt="Wasabi Trader Logo" 
-                className="h-12 sm:h-14 lg:h-16 w-auto object-contain"
+                className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
                 style={{ maxWidth: '200px', height: 'auto' }}
               />
             </Link>
@@ -74,7 +74,7 @@ export default function Header() {
               </nav>
               
               {/* CTA */}
-              <a href="#formulario" className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:from-blue-400 hover:to-blue-500 transition-colors">
+              <a href="#formulario" className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-blue-400 hover:to-blue-500 transition-colors text-sm">
                 EMPEZAR
               </a>
             </div>
@@ -82,10 +82,10 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+              className="lg:hidden p-1.5 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
               aria-label="Toggle mobile menu"
             >
-              {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isMobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
             </button>
           </div>
         </div>
@@ -93,41 +93,41 @@ export default function Header() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
-            <div className="px-4 py-4 space-y-4">
+            <div className="px-4 py-3 space-y-3">
               <a 
                 href="#comparador" 
                 onClick={() => setIsMobileMenuOpen(false)} 
-                className="block text-gray-700 font-bold hover:text-blue-600 transition-colors"
+                className="block text-gray-700 font-bold hover:text-blue-600 transition-colors text-sm"
               >
                 Comparador
               </a>
               <a 
                 href="#testimonios" 
                 onClick={() => setIsMobileMenuOpen(false)} 
-                className="block text-gray-700 font-bold hover:text-blue-600 transition-colors"
+                className="block text-gray-700 font-bold hover:text-blue-600 transition-colors text-sm"
               >
                 Testimonios
               </a>
               <Link 
                 to="/sobre-nosotros" 
                 onClick={() => setIsMobileMenuOpen(false)} 
-                className="block text-gray-700 font-bold hover:text-blue-600 transition-colors"
+                className="block text-gray-700 font-bold hover:text-blue-600 transition-colors text-sm"
               >
                 Nosotros
               </Link>
               <Link 
                 to="/contacto" 
                 onClick={() => setIsMobileMenuOpen(false)} 
-                className="block text-gray-700 font-bold hover:text-blue-600 transition-colors"
+                className="block text-gray-700 font-bold hover:text-blue-600 transition-colors text-sm"
               >
                 Contacto
               </Link>
               
-              <div className="pt-4 border-t border-gray-200">
+              <div className="pt-3 border-t border-gray-200">
                 <a 
                   href="#formulario" 
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-lg font-bold text-center"
+                  className="block w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-2 rounded-lg font-bold text-center text-sm"
                 >
                   EMPEZAR FORMULARIO
                 </a>
