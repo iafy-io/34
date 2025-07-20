@@ -45,13 +45,13 @@ export default function Header() {
         isScrolled ? 'bg-white/95 backdrop-blur-xl shadow-lg' : 'bg-white/90 backdrop-blur-md'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-         <div className="flex justify-between items-center py-0.5">
+         <div className="flex justify-between items-center py-0">
             {/* Logo */}
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
                 src="/wasabilogo copy copy copy copy copy.jpg" 
                 alt="Wasabi Trader Logo" 
-               className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
+               className="h-6 sm:h-8 lg:h-10 w-auto object-contain"
                 style={{ maxWidth: '200px', height: 'auto' }}
               />
             </Link>
@@ -74,7 +74,7 @@ export default function Header() {
               </nav>
               
               {/* CTA */}
-              <a href="#formulario" className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-blue-400 hover:to-blue-500 transition-colors text-sm">
+              <a href="#formulario" className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-1.5 rounded-lg font-bold hover:from-blue-400 hover:to-blue-500 transition-colors text-xs">
                 EMPEZAR
               </a>
             </div>
@@ -82,10 +82,10 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-             className="lg:hidden p-1 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+             className="lg:hidden p-0.5 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
               aria-label="Toggle mobile menu"
             >
-              {isMobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
+              {isMobileMenuOpen ? <X className="w-3 h-3" /> : <Menu className="w-3 h-3" />}
             </button>
           </div>
         </div>
