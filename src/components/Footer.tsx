@@ -15,14 +15,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           <div className="animate-fade-in-up">
             <div className="flex items-center space-x-3 lg:space-x-4 mb-6">
-              <div className="flex items-center justify-center">
-                <img 
-                  src="/wasabilogo.jpg" 
-                  alt="Wasabi Trader Logo" 
-                  className="h-10 lg:h-12 w-auto object-contain"
-                  style={{ maxWidth: '100%', height: 'auto' }}
-                />
-              </div>
+              <img 
+                src="/wasabilogo copy copy copy copy copy.jpg" 
+                alt="Wasabi Trader Logo" 
+                className="h-12 lg:h-16 w-auto object-contain"
+                style={{ maxWidth: '180px', height: 'auto' }}
+              />
               <div>
                 <h3 className="text-xl lg:text-2xl font-black">Wasabi Trader</h3>
                 <p className="text-blue-400 font-bold text-sm lg:text-base">Comparador Inteligente</p>
