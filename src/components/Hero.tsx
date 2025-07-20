@@ -4,7 +4,7 @@ import { Shield, Clock, Users, Brain, Star, ArrowRight, Zap, Target } from 'luci
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-white overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 sm:pt-36 lg:pt-40 xl:pt-44 pb-16 lg:pb-20">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-24 xl:pt-28 pb-16 lg:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8 lg:space-y-10">
             <div className="space-y-6 lg:space-y-8">

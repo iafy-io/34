@@ -45,13 +45,13 @@ export default function Header() {
         isScrolled ? 'bg-white/95 backdrop-blur-xl shadow-lg' : 'bg-white/90 backdrop-blur-md'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex justify-between items-center py-1">
+         <div className="flex justify-between items-center py-0.5">
             {/* Logo */}
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
                 src="/wasabilogo copy copy copy copy copy.jpg" 
                 alt="Wasabi Trader Logo" 
-                className="h-10 sm:h-12 lg:h-14 w-auto object-contain"
+               className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
                 style={{ maxWidth: '200px', height: 'auto' }}
               />
             </Link>
@@ -82,7 +82,7 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-1.5 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+             className="lg:hidden p-1 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
